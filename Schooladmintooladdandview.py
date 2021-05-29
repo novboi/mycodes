@@ -5,7 +5,7 @@ student_database = 'students_info.csv'
 
 
 def display_menu():
-    print("***************************************")
+    print("*************************************")
     print(" Welcome to Student Management System")
     print("***************************************")
     print("1. Add New Student")
@@ -51,24 +51,3 @@ def view_students():
                 print(item, end="\t |")
             print("\n")
 
-    input("Press any key to continue")
-
-
-
-while True:
-    display_menu()
-
-    choice = input("Enter your choice: ")
-    if choice == '1':
-        Add_student()
-    elif choice == '2':
-        view_students()
-    else:
-        break
-
-print("/////////////////////////////////")
-print(" Thank you for using this system")
-print("/////////////////////////////////")
-
-
-# obviously this can be made much better by using try error blocks
