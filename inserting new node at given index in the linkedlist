@@ -1,0 +1,15 @@
+def insertin(self,data,index):
+		  new_node = Node(data)
+		  presentnode = self.head
+		  pos=0
+		  if( pos == index):
+		    self.append(data)
+		  else:
+		    while (presentnode is not None and  pos+1 is not index ):
+		      pos=pos+1
+		      presentnode = presentnode.next
+		    if presentnode is not None:
+		      new_node.next = presentnode.next
+		      presentnode.next = new_node
+		    else:
+		      print("Did nothing")
